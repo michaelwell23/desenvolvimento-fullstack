@@ -20,9 +20,10 @@ Aprendizado Full Stack, desenvolvimento Web back-end e front-end.
 
 ## MÓDULOS
 
-| Módulo                | Link                               |
+| Módulos               | Link                               |
 | --------------------- | ---------------------------------- |
 | 01 - HTML Básico      | [Módulo 01](/01-HTML-basico/)      |
 | 02 - CSS Básico       | [Módulo 02](/02-CSS-basico/)       |
 | 03 - Projeto Linktree | [Módulo 03](/03-projeto-linktree/) |
 | 04 - HTML Semántico   | [Módulo 04](/04-html/)             |
+| 05 - CSS              | [Módulo 04](/05-css/)              |

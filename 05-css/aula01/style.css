@@ -1,0 +1,35 @@
+/* combinadores */
+.exemplo {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+.exemplo1 p.red {
+  color: red;
+}
+
+.margin {
+  margin: 50px;
+}
+
+h1,
+h2,
+h3 {
+  color: blue;
+}
+
+/* elementos filhos */
+.exemplo2 > p {
+  color: blue;
+}
+
+/* primeiro elemento irmão */
+.exemplo3 + p {
+  color: crimson;
+}
+
+/* todos elementos irmão */
+.exemplo4 ~ p {
+  color: darkgreen;
+}

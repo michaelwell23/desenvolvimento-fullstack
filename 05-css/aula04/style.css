@@ -1,0 +1,22 @@
+body {
+  background-image: url(https://cdn.esawebb.org/archives/images/screen/weic2205a.jpg);
+}
+
+/* a {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+} */
+
+ul {
+  background: gray;
+  padding: 20px;
+  /* display: none; */
+  /* visibility: hidden; */
+  opacity: 3;
+}
+
+ul li {
+  display: inline;
+  margin: 10px;
+}

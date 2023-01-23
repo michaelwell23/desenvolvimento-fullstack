@@ -1,0 +1,9 @@
+div {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+  /* overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden; */
+  overflow: auto;
+}
