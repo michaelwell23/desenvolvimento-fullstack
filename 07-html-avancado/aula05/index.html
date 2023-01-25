@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Avançado</title>
+  </head>
+  <body>
+    <form action="salvar.html" method="GET">
+      <fieldset>
+        <legend>Dados do Usuário</legend>
+
+        <label>Nome:</label>
+        <input name="nome" type="text" placeholder="Digite o seu nome" /><br />
+
+        <label>E-mail:</label>
+        <input
+          name="email"
+          type="email"
+          placeholder="Digite o seu e-mail"
+        /><br />
+
+        <label>Senha:</label>
+        <input
+          name="senha"
+          type="password"
+          placeholder="Digite sua senha"
+        /><br /><br />
+
+        <label>Selecione a cor do seu nome</label>
+        <input type="color" name="color" />
+
+        <br /><br />
+
+        <label>Sexo</label><br />
+        <input
+          type="radio"
+          name="sexo"
+          value="masculino"
+          id="masculino"
+        /><label for="masculino">Masculino</label><br />
+        <input type="radio" name="sexo" value="feminino" id="feminino" /><label
+          for="feminino"
+          >Feminino</label
+        >
+
+        <br /><br />
+
+        <label>Habilidades</label><br />
+        <input
+          type="checkbox"
+          name="habilidades"
+          value="html"
+          id="html"
+        /><label for="html">HTML</label><br />
+        <input type="checkbox" name="habilidades" value="css" id="css" /><label
+          for="css"
+          >CSS</label
+        ><br />
+        <input
+          type="checkbox"
+          name="habilidades"
+          value="javascript"
+          id="javascript"
+        /><label for="javascript">JavaScript</label>
+
+        <br /><br />
+
+        <select id="estado" name="estado">
+          <option selected>-- Selecione o Estado--</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+          <option value="EX">Estrangeiro</option>
+        </select>
+
+        <br /><br />
+
+        <select id="estado" name="estado">
+          <option selected>-- Selecione seu carro--</option>
+          <optgroup label="Honda">
+            <option value="Civic">Civic Type</option>
+            <option value="NSX">NSX</option>
+          </optgroup>
+          <optgroup label="Toyota">
+            <option value="Supra">Supra</option>
+            <option value="Trueno AE85/86">Trueno AE85/86</option>
+          </optgroup>
+          <optgroup label="Nissan">
+            <option value="Skyline">Skyline</option>
+            <option value="Silvia">Silvia</option>
+          </optgroup>
+          <optgroup label="Mazda">
+            <option value="RX-7">RX-7</option>
+            <option value="Miata">Miata</option>
+          </optgroup>
+        </select>
+
+        <br /><br />
+
+        <input
+          list="listaFrutas"
+          type="text"
+          name="frutas"
+          placeholder="digite a fruta"
+        />
+        <datalist id="listaFrutas">
+          <option value="Abacate"></option>
+          <option value="Banana"></option>
+          <option value="Caju"></option>
+          <option value="Damasco"></option>
+          <option value="Esfregadinha"></option>
+          <option value="Figo"></option>
+          <option value="Goiaba"></option>
+          <option value="Hilocéreo"></option>
+          <option value="Imbu"></option>
+          <option value="Jabuticaba"></option>
+          <option value="Kiwi"></option>
+          <option value="Limão"></option>
+          <option value="Manga"></option>
+          <option value="Noz"></option>
+          <option value="Oxicoco"></option>
+          <option value="Pêra"></option>
+          <option value="Quina"></option>
+          <option value="Romã"></option>
+          <option value="Seriguela"></option>
+          <option value="Tâmara"></option>
+          <option value="Uva"></option>
+          <option value="Vergamota"></option>
+          <option value="Wampi"></option>
+          <option value="Xixá"></option>
+          <option value="Yamamomo"></option>
+          <option value="Zimbro"></option>
+        </datalist>
+
+        <br /><br />
+
+        <label>Digite um texto</label><br />
+        <textarea name="messagem" id="" cols="80" rows="20"></textarea>
+
+        <br /><br />
+      </fieldset>
+
+      <button>Enviar</button>
+    </form>
+  </body>
+</html>
