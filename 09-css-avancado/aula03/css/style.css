@@ -1,0 +1,7 @@
+img {
+  filter: saturate(80%);
+}
+
+.box {
+  /* filter: blur(5px); */
+}

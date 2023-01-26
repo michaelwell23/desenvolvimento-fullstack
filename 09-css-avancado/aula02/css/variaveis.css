@@ -1,0 +1,7 @@
+:root {
+  --color-primary: crimson;
+  --color-secundary: rgb(110, 84, 194);
+  --color-blue: rgb(16, 52, 172);
+
+  --spacing: 16px;
+}

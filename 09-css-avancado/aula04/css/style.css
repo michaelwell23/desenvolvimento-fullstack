@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 50px;
+}
+
+.body {
+  font-size: 100px;
+}
+
+.box {
+  width: 100vw;
+  height: 100vh;
+  background-color: crimson;
+}
+
+.box2 {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+p {
+  /* font-size: 1.5em; -> Relativo ao tamanho da font*/
+  /* font-size: 2rem; -> Relativo ao tamanho do root */
+}

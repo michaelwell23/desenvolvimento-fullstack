@@ -1,0 +1,23 @@
+:root {
+  --color-primary: crimson;
+  --color-secundary: rgb(110, 84, 194);
+  --color-blue: rgb(16, 52, 172);
+
+  --spacing: 16px;
+}
+
+h1 {
+  color: var(--color-primary);
+}
+
+h2 {
+  color: var(--color-red);
+}
+
+p {
+  color: var(--color-secundary);
+}
+
+button {
+  background: var(--color-scundary);
+}

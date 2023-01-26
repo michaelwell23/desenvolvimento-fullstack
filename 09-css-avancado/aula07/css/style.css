@@ -1,0 +1,31 @@
+body {
+  margin: 100px;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+
+  animation-name: minhaAnimacao;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-delay: 5000ms;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes minhaAnimacao {
+  0% {
+    background-color: black;
+  }
+
+  50% {
+    background-color: rgb(219, 31, 240);
+  }
+
+  100% {
+    background-color: crimson;
+    transform: rotate(360deg);
+  }
+}
