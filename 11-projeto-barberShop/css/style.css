@@ -1,0 +1,207 @@
+:root {
+  --color-primary: #917758;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/***********
+* SECTION HOME
+************/
+
+.home {
+  position: relative;
+  background-image: url(https://img.freepik.com/fotos-gratis/varios-aparadores-na-penteadeira_107420-94767.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.home .header {
+  padding: 30px;
+}
+
+.home .header .nav {
+  display: flex;
+  justify-content: center;
+}
+
+.home .header .nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.home .header .nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+
+.home .header .nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.home .header .nav ul li a:hover {
+  border-bottom: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.home .header .nav ul li .logo {
+  margin: 0 28px;
+  width: 134px;
+}
+
+/***************
+* HOME - BANNER
+***************/
+
+.home .banner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  color: #ffffff;
+  text-align: center;
+  margin: 20px;
+
+  height: 270px;
+  width: 770px;
+  margin-left: -385px;
+  margin-top: -100px;
+}
+
+.home .banner span {
+  display: block;
+}
+
+.home .banner .slogan1 {
+  color: var(--color-primary);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+.home .banner h1 {
+  font-size: 120px;
+}
+
+.home .banner .slogan2 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/***************
+* SECTION ABOUT
+***************/
+
+.about {
+  background-color: var(--color-primary);
+}
+
+.about .container {
+  display: flex;
+}
+
+.about .timing {
+  width: 33%;
+  padding: 20px;
+  background-image: url(../images/brush-big.jpg);
+  background-repeat: no-repeat;
+
+  position: relative;
+  top: -50px;
+}
+
+.about .timing .overlay {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about .timing .icon-cut {
+  width: 50px;
+}
+
+.about .timing h3 {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-primary);
+  margin: 0 auto 30px auto;
+  width: fit-content;
+  font-size: 30px;
+}
+
+.about .timing .text {
+  margin: 10px 0;
+}
+
+.about .timing .text::after {
+  content: '○';
+  display: block;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.about .timing .text:last-of-type:after {
+  content: '|';
+}
+
+.about .timing .text h4 {
+  color: gray;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.about .timing span {
+  font-size: 14px;
+  display: block;
+}
+
+.about .experience {
+  width: 66%;
+  margin-left: 7%;
+  margin-top: 100px;
+}
+
+.about .experience h2 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.about .experience h2::after {
+  display: block;
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: #a38f78;
+  margin: 20px 0;
+}
+
+.about .experience .text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .experience .text p {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 17px;
+}
