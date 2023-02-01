@@ -6,27 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
       rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Barber Shop</title>
   </head>
   <body>
-    <section class="home">
+    <section class="home" id="home">
       <header class="header">
         <nav class="nav">
           <ul>
             <li>
-              <a href="#">HOME</a>
+              <a href="#home">HOME</a>
             </li>
             <li>
-              <a href="#">SOBRE</a>
+              <a href="#about">SOBRE</a>
             </li>
             <li>
-              <a href="#">SERVIÇOS</a>
+              <a href="#services">SERVIÇOS</a>
             </li>
             <li>
               <img
@@ -36,13 +43,13 @@
               />
             </li>
             <li>
-              <a href="#">GALERIA</a>
+              <a href="#gallery">GALERIA</a>
             </li>
             <li>
-              <a href="#">AGENDAMENTO</a>
+              <a href="#appointment">AGENDAMENTO</a>
             </li>
             <li>
-              <a href="#">LOCALIZAÇÃO</a>
+              <a href="#lacation">LOCALIZAÇÃO</a>
             </li>
           </ul>
         </nav>
@@ -56,7 +63,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="timing">
           <div class="overlay">
@@ -82,8 +89,7 @@
             <br />
 
             <img src="./images/loc-ic.png" alt="Endereço" />
-            <span>Rua Hungria, 422 </span>
-            <span>Jardim das Nações — Salto/SP</span>
+            <span>Rua Hungria</span>
 
             <br />
 
@@ -127,5 +133,322 @@
         </div>
       </div>
     </section>
+
+    <section class="services" id="services">
+      <h2 class="title">Nossos Serviços</h2>
+      <img src="images/heading-ic.png" alt="Serviços" />
+      <div class="container">
+        <div class="card">
+          <figure class="card__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1589985494639-69e60c82cab2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              alt="Picture by Kyle Cottrell"
+              class="card__image"
+            />
+            <figcaption class="card__caption">
+              <h2 class="card__title">
+                <img src="./images/razor-shaver.svg" alt="" />
+              </h2>
+              <p class="card__snippet">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deserunt eos a omnis, quo beatae, saepe aut odit error minima
+                neque ut placeat natus, et necessitatibus illo! Velit unde nisi
+                modi.
+              </p>
+              <a href="" class="card__button">Mais Informações</a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="card">
+          <figure class="card__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80"
+              alt="Picture by Nathan Dumlao"
+              class="card__image"
+            />
+            <figcaption class="card__caption">
+              <h2 class="card__title">
+                <img src="./images/classic-cut.svg" alt="cut" />
+              </h2>
+              <p class="card__snippet">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                impedit, eum soluta vel corporis reiciendis, culpa neque
+                voluptate officiis velit optio quia doloribus distinctio qui
+                molestias odit, adipisci repellendus ipsa.
+              </p>
+              <a href="" class="card__button">Mais Informações</a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="card">
+          <figure class="card__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1533245270348-821d4d5c7514?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              alt="Picture by Daniel Lincoln"
+              class="card__image"
+            />
+            <figcaption class="card__caption">
+              <h2 class="card__title">
+                <img src="./images/clipper-cut.svg" alt="cut" />
+              </h2>
+              <p class="card__snippet">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                numquam. Hic cupiditate quos eos maiores dolorem quis aliquam!
+                Veniam accusantium perferendis blanditiis aspernatur molestias
+                sapiente, ex illo numquam in! Dolorum.
+              </p>
+              <a href="" class="card__button">Mais Informações</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="appointment" id="appointment">
+      <div class="container">
+        <h2>Faça um Agendamento</h2>
+        <img src="images/heading-ic-white.png" alt="faça um Agendamento" />
+
+        <div class="content">
+          <div class="icon_wrapper"></div>
+          <form action="#" method="post" id="contact_form">
+            <div class="name">
+              <label for="name"></label>
+              <input
+                type="text"
+                placeholder="Nome"
+                name="name"
+                id="name_input"
+                required
+              />
+            </div>
+            <div class="email">
+              <label for="email"></label>
+              <input
+                type="email"
+                placeholder="E-mail"
+                name="email"
+                id="email_input"
+                required
+              />
+            </div>
+            <div class="telephone">
+              <label for="name"></label>
+              <input
+                type="text"
+                placeholder="Telefone"
+                name="telephone"
+                id="telephone_input"
+                required
+              />
+            </div>
+            <div class="subject">
+              <label for="subject"></label>
+              <select
+                placeholder="Serviços"
+                name="subject"
+                id="subject_input"
+                required
+              >
+                <option disabled hidden selected>
+                  Por Favor, escolha o serviço
+                </option>
+                <option>Aparar a barba</option>
+                <option>Barbeamento</option>
+                <option>Barbeamento com navalha</option>
+                <option>Barbeamento com toalha quente</option>
+                <option>Corte de cabelo</option>
+              </select>
+            </div>
+            <div class="message">
+              <label for="message"></label>
+              <textarea
+                name="message"
+                placeholder="Deixe a sua menssagem"
+                id="message_input"
+                cols="30"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="submit">
+              <input type="submit" value="Enviar" id="form_button" />
+            </div>
+          </form>
+          <!-- // End form -->
+        </div>
+        <!-- // End #container -->
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2>Galeria de Fotos</h2>
+        <img src="images/heading-ic.png" alt="Galeria de Fotos" />
+
+        <div class="gallery-wrapper">
+          <div>
+            <img src="images/gallery-img1.png" alt="Galeria" />
+          </div>
+          <div>
+            <img src="images/gallery-img2.png" alt="Galeria" />
+          </div>
+          <div>
+            <img src="images/gallery-img3.png" alt="Galeria" />
+          </div>
+          <div>
+            <img src="images/gallery-img4.png" alt="Galeria" />
+          </div>
+          <div>
+            <img src="images/gallery-img5.png" alt="Galeria" />
+          </div>
+          <div>
+            <img src="images/gallery-img6.png" alt="Galeria" />
+          </div>
+          <div>
+            <img src="images/gallery-img7.png" alt="Galeria" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location" id="location">
+      <div class="container">
+        <div class="head">
+          <div class="info">
+            <div class="icon">
+              <img src="images/map-img1.svg" alt="Localização" />
+            </div>
+            <div class="text">
+              <span>Localização</span>
+              <span>Rua Hungria</span>
+            </div>
+          </div>
+
+          <div class="info">
+            <div class="icon">
+              <img src="images/map-img2.svg" alt="Telefone" />
+            </div>
+            <div class="text">
+              <span>Telefone</span>
+              <span>+55 (11) 9 9999-9999</span>
+            </div>
+          </div>
+
+          <div class="info">
+            <div class="icon">
+              <img src="images/map-img3.svg" alt="E-mail" />
+            </div>
+            <div class="text">
+              <span>E-mail</span>
+              <span>contato@barbershop.com</span>
+            </div>
+          </div>
+
+          <div class="info">
+            <div class="icon">
+              <img src="images/map-img4.svg" alt="Horário" />
+            </div>
+            <div class="text">
+              <span>Horário</span>
+              <span>Seg. à Sex. 8h às 17h</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1833.65639907445!2d-47.27665302413492!3d-23.195268530796103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaa1a62a78a466e07!2zMjPCsDExJzQzLjAiUyA0N8KwMTYnMzIuMCJX!5e0!3m2!1spt-BR!2sbr!4v1675193116861!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id
+              lobortis nisi. Duis orci risus, malesuada in consequat sed,
+              ultricies id ex. Integer urna nibh, pellentesque ac purus eget,
+              congue iaculis erat. Donec faucibus ac tortor vitae auctor. Nullam
+              auctor feugiat augue semper mollis. Aliquam accumsan euismod
+              hendrerit. Maecenas ornare dignissim orci, non feugiat odio
+              iaculis ac. Quisque consectetur pellentesque pretium. Donec at
+              metus in diam dictum tristique at in justo. Nullam hendrerit nisl
+              ut nisl iaculis, at ullamcorper metus imperdiet. Fusce sed orci
+              nunc. Donec varius leo sed malesuada egestas. Curabitur faucibus
+              est a quam sollicitudin faucibus.
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3"></div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Navegations Links</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="#home">HOME</a>
+              </li>
+              <li>
+                <a href="#about">SOBRE</a>
+              </li>
+              <li>
+                <a href="#services">SERVIÇOS</a>
+              </li>
+              <li>
+                <a href="#gallery">GALERIA</a>
+              </li>
+              <li>
+                <a href="#appointment">AGENDAMENTO</a>
+              </li>
+              <li>
+                <a href="#location">LOCALIZAÇÃO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2023 All Rights Reserved by
+              <a href="#">Michael Wellington Lopes</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
