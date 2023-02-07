@@ -34,8 +34,7 @@ for (let cliente of clientes) {
       ${listaLinguagens}
     </ul>
   </li>
-
- `;
+`;
 }
 
 document.querySelector('#listaClientes').innerHTML = htmlClientes;

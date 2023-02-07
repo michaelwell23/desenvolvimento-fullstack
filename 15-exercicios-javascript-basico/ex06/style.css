@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans';
+  background: #fafafa;
+}
+
+.cards-wrapper {
+  justify-content: center;
+  align-items: center;
+}
+
+.card-info {
+  display: flex;
+  margin: 30px;
+  padding: 30px;
+}
+
+.card {
+  background: #cacaca;
+  display: block;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #111;
+  border-radius: 10px;
+}
