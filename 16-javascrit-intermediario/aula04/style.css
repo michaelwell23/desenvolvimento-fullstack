@@ -1,0 +1,40 @@
+.menuMobile {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(13, 13, 13);
+  color: antiquewhite;
+  transition: all 800ms ease;
+}
+
+.menuMobile ul {
+  list-style: none;
+}
+
+.menuMobile ul li {
+  padding: 5px;
+  margin: 5px;
+  text-transform: uppercase;
+}
+
+.menuMobile ul li:hover {
+  color: crimson;
+  background-color: aliceblue;
+}
+
+.menuMobile.open {
+  left: 0%;
+}
+
+.botaoMenu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.botaoMenu:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
