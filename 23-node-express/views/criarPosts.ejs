@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <%- include('partials/head.ejs') %>
+  </head>
+  <body>
+    <%- include('partials/header.ejs') %>
+
+    <section class="createPosts-area">
+      <div class="text-part">
+        <div class="container">
+          <% if (cadastrado) { %>
+          <h4 class="success">Cadastros Realisado com Sucesso</h4>
+          <% } %>
+
+          <form id="contact" action="/salvar-post" method="post">
+            <h3>Criar Postagens</h3>
+            <h4>Crie sua postagens</h4>
+            <fieldset>
+              <input
+                placeholder="Nome"
+                name="name"
+                type="text"
+                tabindex="1"
+                required
+                autofocus
+              />
+            </fieldset>
+            <fieldset>
+              <input
+                placeholder="Título da postagem"
+                name="title"
+                type="text"
+                tabindex="4"
+                required
+              />
+            </fieldset>
+            <fieldset>
+              <textarea
+                placeholder="Digite sua postagem..."
+                name="body"
+                tabindex="5"
+                required
+              ></textarea>
+            </fieldset>
+            <fieldset>
+              <button type="submit">Enviar</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <%- include('partials/scripts.ejs') %>
+  </body>
+</html>
