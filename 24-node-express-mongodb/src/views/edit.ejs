@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <%- include('partials/head.ejs') %>
+  <body>
+    <div class="wrap">
+      <%- include('./partials/header.ejs') %> <% if (typeof message !==
+      'undefined') { %> <%= message %> <% } %>
+      <hgroup>
+        <h1>Cadastrar Usuário</h1>
+      </hgroup>
+
+      <form action="/editar/<%=user._id %>" method="POST" class="form register">
+        <div class="group">
+          <input
+            type="text"
+            name="name"
+            value="<%= user.name %>"
+            placeholder="nome"
+          /><span class="highlight"></span><span class="bar"></span>
+        </div>
+        <div class="group">
+          <input
+            type="text"
+            name="age"
+            value="<%= user.age %>"
+            placeholder="idade"
+          /><span class="highlight"></span><span class="bar"></span>
+        </div>
+        <div class="group">
+          <input
+            type="email"
+            name="email"
+            value="<%= user.email %>"
+            placeholder="email"
+          /><span class="highlight"></span><span class="bar"></span>
+        </div>
+
+        <button type="submit" class="button buttonBlue">
+          Cadastrar
+          <div class="ripples buttonRipples">
+            <span class="ripplesCircle"></span>
+          </div>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

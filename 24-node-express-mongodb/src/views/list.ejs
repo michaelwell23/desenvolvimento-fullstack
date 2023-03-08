@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <div class="wrap"><%- include('./partials/header.ejs') %></div>
+
+    <div class="container">
+      <h2>Listagem de Usuários <small></small></h2>
+      <ul class="responsive-table">
+        <li class="table-header">
+          <div class="col col-1">Nome</div>
+          <div class="col col-2">Idade</div>
+          <div class="col col-3">Email</div>
+          <div class="col col-4">Ações</div>
+        </li>
+        <% users.forEach((user) => { %>
+        <li class="table-row">
+          <div class="col col-1" data-label="Job Id"><%= user.name %></div>
+          <div class="col col-2" data-label="Customer Name">
+            <%= user.age %>
+          </div>
+          <div class="col col-3" data-label="Amount"><%= user.email %></div>
+          <div class="col col-4" data-label="Payment Status">
+            <a class="edit" href="/editar?id=<%= user.id %>">editar</a>
+            <a class="delete" href="/deletar/<%= user.id %>">deletar</a>
+          </div>
+        </li>
+        <% }) %>
+      </ul>
+    </div>
+
+    <% if (typeof message !== 'undefined') { %> <%= message %> <% } %>
+
+    <!-- <%- include('./partials/footer.ejs') %> -->
+  </body>
+</html>
