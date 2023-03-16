@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products List</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body className="snippet-body">
+    <div class="card">
+      <div class="row">
+        <div class="col-md-8 cart">
+          <div class="title">
+            <div class="row">
+              <div class="col">
+                <h4><b>Products List</b></h4>
+              </div>
+            </div>
+          </div>
+          <div class="row border-top border-bottom" id="products-list"></div>
+        </div>
+
+        <!-- CADASTRAR PRODUTO -->
+        <div class="col-md-4 summary">
+          <div>
+            <h5><b>CADASTRAR PRODUTO</b></h5>
+          </div>
+          <hr />
+          <form id="form">
+            <p>Nome do Produto</p>
+            <input
+              type="text"
+              name="name"
+              value=""
+              placeholder="Digite o nome do produto"
+            />
+            <p>Marca</p>
+            <input
+              type="text"
+              name="brand"
+              value=""
+              placeholder="Digite a marca do produto"
+            />
+            <p>Preço</p>
+            <input
+              type="text"
+              name="price"
+              value=""
+              placeholder="Digite o preço do produto"
+            />
+            <button type="submit" class="btn">Cadastrar</button>
+          </form>
+        </div>
+
+        <div class="col-md-4 summary edit hidden">
+          <div>
+            <h5><b>EDITAR PRODUTO</b></h5>
+          </div>
+          <hr />
+          <form id="formEdit">
+            <p>Nome do Produto</p>
+            <input
+              type="text"
+              name="name"
+              value=""
+              placeholder="Digite o nome do produto"
+            />
+            <p>Marca</p>
+            <input
+              type="text"
+              name="brand"
+              value=""
+              placeholder="Digite a marca do produto"
+            />
+            <p>Preço</p>
+            <input
+              type="text"
+              name="price"
+              value=""
+              placeholder="Digite o preço do produto"
+            />
+            <button type="submit" class="btn">Atualizar Produto</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
