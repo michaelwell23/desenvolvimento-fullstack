@@ -20,7 +20,7 @@ routes.get('/registrar', createForm);
 routes.post('/registrar/criar', create);
 
 // Listando
-routes.get('/usuarios', list);
+routes.get('/clientes', list);
 
 // Editando
 routes.get('/editar', editForm);

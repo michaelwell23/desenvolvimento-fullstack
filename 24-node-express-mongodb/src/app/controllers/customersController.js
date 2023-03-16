@@ -72,8 +72,8 @@ async function remove(req, res) {
 
   const remove = await CustomersModel.deleteOne({ _id: id });
 
-  if (remove.ok) {
-    res.redirect('/usuarios');
+  if (remove.deletedCount === 1) {
+    res.redirect('/clientes');
   }
 }
 

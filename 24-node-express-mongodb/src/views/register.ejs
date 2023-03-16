@@ -1,45 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html :class="{ 'theme-dark': dark }" x-data="data()" lang="en">
   <%- include('partials/head.ejs') %>
   <body>
-    <div class="wrap">
-      <%- include('./partials/header.ejs') %> <% if (typeof message !==
-      'undefined') { %> <%= message %> <% } %>
-      <hgroup>
-        <h1>Cadastrar Usuário</h1>
-      </hgroup>
+    <div
+      class="flex h-screen bg-gray-50 dark:bg-gray-900"
+      :class="{ 'overflow-hidden': isSideMenuOpen }"
+    >
+      <%- include('partials/aside.ejs') %>
 
-      <form action="/registrar/criar" method="POST" class="form register">
-        <div class="group">
-          <input type="text" name="name" /><span class="highlight"></span
-          ><span class="bar"></span>
-          <label>Nome</label>
-        </div>
-        <div class="group">
-          <input type="text" name="age" /><span class="highlight"></span
-          ><span class="bar"></span>
-          <label>Idade</label>
-        </div>
-        <div class="group">
-          <input type="email" name="email" /><span class="highlight"></span
-          ><span class="bar"></span>
-          <label>Email</label>
-        </div>
-        <div class="group">
-          <input type="password" name="password" /><span
-            class="highlight"
-          ></span
-          ><span class="bar"></span>
-          <label>Senha</label>
-        </div>
-        <button type="submit" class="button buttonBlue">
-          Cadastrar
-          <div class="ripples buttonRipples">
-            <span class="ripplesCircle"></span>
+      <div class="flex flex-col flex-1 w-full">
+        <%- include('partials/header.ejs') %>
+
+        <main class="h-full pb-16 overflow-y-auto">
+          <div class="container px-6 mx-auto grid">
+            <h2
+              class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
+            >
+              Registar
+            </h2>
+            <!-- CTA -->
+            <% if (typeof message !== 'undefined') { %>
+            <span class="text-center bg-purple-400 text-black">
+              <%= message %>
+            </span>
+            <% } %>
+
+            <!-- General elements -->
+            <form action="/registrar/criar" method="POST" class="form register">
+              <div
+                class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
+              >
+                <label class="block text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">Nome</span>
+                  <input
+                    class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    type="text"
+                    name="name"
+                    placeholder="Digite seu Nome"
+                  />
+                </label>
+
+                <label class="block text-sm mt-4 text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">Idade</span>
+                  <input
+                    class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    type="text"
+                    name="age"
+                    placeholder="Digite sua idade"
+                  />
+                </label>
+
+                <label class="block text-sm mt-4 text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">Email</span>
+                  <input
+                    class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    type="email"
+                    name="email"
+                    placeholder="Digite seu email"
+                  />
+                </label>
+
+                <label class="block text-sm mt-4 text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">Senha</span>
+                  <input
+                    class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    type="password"
+                    name="password"
+                    placeholder="Digite sua Senha"
+                  />
+                </label>
+
+                <label class="block mt-4 text-sm">
+                  <div
+                    class="relative text-gray-500 focus-within:text-purple-600"
+                  >
+                    <button
+                      class="bg-purple-600 hover:bg-purple-700 right-0 text-white font-bold py-2 px-4 rounded"
+                      type="submit"
+                    >
+                      Registar
+                    </button>
+                  </div>
+                </label>
+              </div>
+            </form>
           </div>
-        </button>
-      </form>
+        </main>
+      </div>
     </div>
-    <%- include('partials/scripts.ejs') %>
   </body>
 </html>
