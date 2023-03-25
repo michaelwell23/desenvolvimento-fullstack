@@ -1,0 +1,44 @@
+.holder {
+  margin: 0;
+  padding: 0 15px;
+  font-size: 25px;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  z-index: 9;
+}
+
+#header .button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+#header .button-wrapper button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  color: #fff;
+  background-color: #3978ef;
+  font-size: 0.8rem;
+  margin: 0 10px;
+
+  border-radius: 8px;
+
+  outline: none;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+#header .button-wrapper button:hover {
+  background-color: rgba(57, 120, 239, 0.35);
+  color: #222;
+  transition: 6ms;
+}
