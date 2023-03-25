@@ -1,0 +1,39 @@
+.holder {
+  margin: 0 auto;
+  padding: 0 15px;
+  font-size: 25px;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  z-index: 9;
+}
+
+#header .holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .logo-wrapper {
+  margin: 0 50px;
+  font-family: 'Ubuntu';
+  font-weight: 700;
+}
+
+#header .nav-bar ul {
+  display: flex;
+  font-size: 15px;
+  font-weight: 600;
+}
+#header .nav-bar ul li a {
+  padding: 10px 15px;
+  color: #424242;
+  text-decoration: none;
+}

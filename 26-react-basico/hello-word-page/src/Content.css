@@ -1,0 +1,23 @@
+.section {
+  margin-top: 85px;
+}
+
+article {
+  position: absolute;
+  color: black;
+}
+
+.holder p {
+  padding: 10px 82px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.holder .title {
+  margin-top: 80px;
+  color: black;
+  padding: 10px 82px;
+  font-size: 45px;
+  text-align: center;
+  font-weight: 700;
+}

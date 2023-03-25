@@ -1,0 +1,13 @@
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  margin: 40px;
+  color: black;
+  padding: 10px 82px;
+  font-size: 45px;
+  text-align: center;
+  font-weight: 700;
+}
