@@ -46,11 +46,11 @@ Aprendizado Full Stack, desenvolvimento Web back-end e front-end.
 | 22 - NodeJS                      | [Módulo 22](https://github.com/michaelwell23/desenvolvimento-fullstack/tree/master/22-node/)                               |
 | 23 - NodeJS e ExpressJS          | [Módulo 23](https://github.com/michaelwell23/desenvolvimento-fullstack/tree/master/23-node-express/)                       |
 | 24 - NodeJS, ExpressJS e MongoDB | [Módulo 24](https://github.com/michaelwell23/desenvolvimento-fullstack/tree/master/24-node-express-mongodb/)               |
-| 25 - React Básico                | [Módulo 25]()                                                                                                              |
-| 26 - React Intermediário         | [Módulo 26]()                                                                                                              |
-| 27 - React Avançado              | [Módulo 27]()                                                                                                              |
-| 28 -                             | [Módulo 28]()                                                                                                              |
-| 29 -                             | [Módulo 28]()                                                                                                              |
-| 30 -                             | [Módulo 28]()                                                                                                              |
-| 31 -                             | [Módulo 28]()                                                                                                              |
-| 32 -                             | [Módulo 28]()                                                                                                              |
+| 25 - React Básico                | [Módulo 25](https://github.com/michaelwell23/desenvolvimento-fullstack/tree/master/25-api-restful)                                                                                                              |
+| 26 - React Intermediário         | [Módulo 26](https://github.com/michaelwell23/desenvolvimento-fullstack/tree/master/26-react-basico)                                                                                                              |
+| 27 - React Avançado              | [Módulo 27](https://github.com/michaelwell23/desenvolvimento-fullstack/tree/master/)                                                                                                              |
+| 28 -                             | [Módulo 28](https://github.com/michaelwell23/desenvolvimento-fullstack/tree/master/)                                                                                                              |
+| 29 -                             | [Módulo 29](https://github.com/michaelwell23/desenvolvimento-fullstack/tree/master/)                                                                                                              |
+| 30 -                             | [Módulo 30](https://github.com/michaelwell23/desenvolvimento-fullstack/tree/master/)                                                                                                              |
+| 31 -                             | [Módulo 31](https://github.com/michaelwell23/desenvolvimento-fullstack/tree/master/)                                                                                                              |
+| 32 -                             | [Módulo 32](https://github.com/michaelwell23/desenvolvimento-fullstack/tree/master/)                                                                                                              |
