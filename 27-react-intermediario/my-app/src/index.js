@@ -10,7 +10,7 @@ import './GlobaStyle.css';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: deepPurple[800],
+      main: deepPurple[900],
     },
     secondary: {
       main: grey[300],
@@ -27,4 +27,4 @@ root.render(
   </React.StrictMode>
 );
 
-// PAUSANDO NO VIDEO 7
+// 10: 18
