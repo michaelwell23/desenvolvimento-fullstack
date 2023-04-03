@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 
 import { makeStyles } from '@material-ui/styles';
 
-import CustomerCard from '../components/CustomerCard';
+import CustomerCard from '../../components/CustomerCard';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Customers = () => {
+const List = () => {
   const classes = useStyles();
   const [customers, setCustomers] = useState([]);
 
@@ -28,17 +28,29 @@ const Customers = () => {
     });
   }, []);
 
+  const handleRomeveCustomer = (id) => {
+    axios.delete(`https://reqres.in/api/users/${id}`).then(() => {
+      const newCustomersState = customers.filter(
+        (customer) => customer.id !== id
+      );
+
+      setCustomers(newCustomersState);
+    });
+  };
+
   return (
     <>
       <Grid container>
         {customers.map((item) => (
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={4} key={item.id}>
             <CustomerCard
+              id={item.id}
               firstName={item.first_name}
               lastName={item.last_name}
               email={item.email}
               avatar={item.avatar}
               classeName={classes.card}
+              onRemoveCustomer={handleRomeveCustomer}
             />
           </Grid>
         ))}
@@ -47,4 +59,4 @@ const Customers = () => {
   );
 };
 
-export default Customers;
+export default List;
