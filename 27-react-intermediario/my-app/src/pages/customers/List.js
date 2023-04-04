@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
+
 import axios from 'axios';
 import Grid from '@material-ui/core/Grid';
 
@@ -18,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
 
 const List = () => {
   const classes = useStyles();
+  const history = useHistory();
+
   const [customers, setCustomers] = useState([]);
 
   useEffect(() => {
@@ -38,6 +42,10 @@ const List = () => {
     });
   };
 
+  const handleEditCustomer = (id) => {
+    history.push(`/customers/edit/${id}`);
+  };
+
   return (
     <>
       <Grid container>
@@ -51,6 +59,7 @@ const List = () => {
               avatar={item.avatar}
               classeName={classes.card}
               onRemoveCustomer={handleRomeveCustomer}
+              onEditCustomer={handleEditCustomer}
             />
           </Grid>
         ))}
