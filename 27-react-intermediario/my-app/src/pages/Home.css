@@ -1,0 +1,92 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  text-decoration: none;
+  font-family: helvetica neue, helvetica, arial, sans-serif;
+  font-smooth: always;
+}
+
+body {
+  background: #eeeeee;
+}
+
+h1 {
+  font-size: 300%;
+  margin-top: 40px;
+  color: #aaa;
+  text-shadow: 0px 1px 0px #fff;
+  font-weight: 300;
+  text-align: center;
+}
+
+h2 {
+  font-size: 200%;
+  margin-top: 40px;
+  color: #aaa;
+  text-shadow: 0px 1px 0px #fff;
+  font-weight: 300;
+  text-align: center;
+}
+
+h4 {
+  color: grey;
+  font-size: 100%;
+}
+
+.buttons {
+  margin: 20px 10px 20px 10px;
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  padding: 12px 20px 12px 20px;
+}
+
+a.flatbutt {
+  background: #e26c3d;
+  border-radius: 3px;
+  color: #eee;
+  font-size: 90%;
+}
+
+a.raised {
+  background: #e26c3d;
+  border-radius: 3px;
+  color: #eee;
+  font-size: 90%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+a.flat-three-d {
+  background: #e26c3d;
+  border-radius: 3px;
+  color: #eee;
+  font-size: 90%;
+}
+
+a.amzbutt {
+  background: #e26c3d;
+  border-radius: 3px;
+  color: #eee;
+  font-size: 90%;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2),
+    inset 0px 2px 0px rgba(255, 255, 255, 0.2);
+}
+
+a.spr-amz-butt {
+  background: -webkit-linear-gradient(#e26c3d, #d15b2c);
+  border-radius: 3px;
+  color: #eee;
+  font-size: 90%;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2),
+    inset 0px 2px 0px rgba(255, 255, 255, 0.2), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+a.shadow-material {
+  background: #e26c3d;
+  border-radius: 3px;
+  color: #eee;
+  font-size: 90%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
