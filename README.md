@@ -53,7 +53,7 @@ Aprendizado Full Stack, desenvolvimento Web back-end e front-end.
 | 28 - React Avançado              | [Módulo 28](https://github.com/michaelwell23/desenvolvimento-fullstack/tree/master/28-react-avancado)                      |
 | 29 - Introdução do NextJS        | [Módulo 29](https://github.com/michaelwell23/desenvolvimento-fullstack/tree/master/29-next)                                |
 |                                  |
-| 30 - Projeto Final               | [Módulo 30](()                                                                                                             |
+| 30 - Projeto Final               | [Módulo 30](https://github.com/michaelwell23/projeto-anuncia.com)                                                                                                             |
 |                                  |
 | 31 - Bot Web Crawler             | [Módulo 31]()                                                                                                              |
 |                                  |
